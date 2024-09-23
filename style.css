@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5c9968; /* Light green background */
+    margin: 0;
+}
+
+canvas {
+    border: 2px solid #fff;
+}
+
+/* Start Game Button */
+#startGameButton {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+#startGameButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#startGameButton:active {
+    background-color: #3e8e41; /* Dark green on click */
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Difficulty Options */
+#difficultyOptions {
+    text-align: center;
+}
+
+#difficultyOptions div {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#difficultyOptions h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#difficultyOptions p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#difficultyOptions button {
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#difficultyOptions button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Top Right Buttons */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-right-buttons a {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ffdb58; /* Yellow */
+    color: #4caf50; /* Green */
+    transition: background-color 0.3s ease;
+}
+
+.top-right-buttons a:hover {
+    background-color: #ffe08a; /* Lighter yellow on hover */
+}
+
+/* Toggle Registration Button */
+#toggleRegistrationButton {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #ffdb58; /* Yellow */
+    color: #4caf50; /* Green */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggleRegistrationButton:hover {
+    background-color: #ffe08a; /* Lighter yellow on hover */
+}
+
+/* Falling Animation */
+@keyframes fallIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.falling-options {
+    animation: fallIn 0.5s forwards;
+}
+
+.falling-option {
+    opacity: 0;
+    animation: fallIn 0.5s forwards;
+}
+
+/* Top Left Buttons */
+.top-left-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.top-left-buttons a {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ffdb58; /* Yellow */
+    color: #4caf50; /* Green */
+    transition: background-color 0.3s ease;
+}
+
+.top-left-buttons a:hover {
+    background-color: #ffe08a; /* Lighter yellow on hover */
+}
+
+/* Start Game Home Button */
+#startGameHomeButton {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ffdb58; /* Yellow */
+    color: #4caf50; /* Green */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startGameHomeButton:hover {
+    background-color: #ffe08a; /* Lighter yellow on hover */
+}
